@@ -13,7 +13,7 @@ namespace mars_rover_case
             Position position = new(1, 2);
 
             // Create rover instance
-            Rover rover = new Rover(plateau, position, Direction.N);
+            Rover rover = new(plateau, position, Direction.N);
             rover.Process("LMLMLMLMM");
             Console.WriteLine(rover.CurrentPosition()); // prints 1 3 N
 
